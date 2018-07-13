@@ -6,3 +6,6 @@
 *.x86f
 *~
 .#*
+.cache/*
+bundle-libs/
+quicklisp/
