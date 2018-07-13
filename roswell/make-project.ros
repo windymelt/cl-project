@@ -34,7 +34,7 @@ A command-line interface for cl-project:make-project.
                       value
                       read-value)))
                value)))
-    (let ((path (pop args)))
+    (let ((path (uiop/filesystem:ensure-pathname (pop args))))
       (when (starts-with-subseq "--" path)
         (terminate "No path given."))
       (cons path
