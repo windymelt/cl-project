@@ -1,4 +1,4 @@
-ENV = docker-compose run --rm <% @var name %>
+ENV = docker-compose run --rm app
 
 .PHONY: run setup test build
 
